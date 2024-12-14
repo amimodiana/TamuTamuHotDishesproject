@@ -1,3 +1,5 @@
+from linecache import checkcache
+
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
@@ -39,3 +41,4 @@ def register_user(request):
         form = UserCreationForm()
 
         return render(request,'Register_user.html',{'form' : form})
+

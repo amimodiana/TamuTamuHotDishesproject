@@ -8,5 +8,4 @@ urlpatterns=[
 
     path('team/', views.team, name='team'),
 
-
 ]
